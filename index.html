@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PulsePoint</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="autoLogin()">
+ 
+    <div class="center">    
+        <div class="form-container">
+            <h2>Login</h2>
+            <select id="role">
+            <option value="">Select Role</option>
+            <option value="Nurse">Nurse</option>
+            <option value="Admin">Admin</option>
+            </select>
+            <br><br>
+
+            <input type="text" placeholder="Practitioner ID">
+            <br><br>
+
+            <input type="password" id="password" placeholder="Password" oninput="checkPasswordStrength()">
+            <span id="feedback"></span>
+            <br><br>
+
+            <button onclick="login()">Login</button>
+        </div>
+    </div>
+</body>
+</html>
